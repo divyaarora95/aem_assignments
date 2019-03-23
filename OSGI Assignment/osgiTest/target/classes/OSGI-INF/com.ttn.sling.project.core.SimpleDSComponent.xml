@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.ttn.sling.project.core.SimpleDSComponent">
+  <implementation class="com.ttn.sling.project.core.SimpleDSComponent"/>
+  <service>
+    <provide interface="java.lang.Runnable"/>
+  </service>
+  <property name="scheduler.period" type="Long" value="10"/>
+</scr:component>

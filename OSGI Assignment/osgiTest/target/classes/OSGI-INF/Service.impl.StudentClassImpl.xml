@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="Service.impl.StudentClassImpl" immediate="true" activate="activateMethod">
+  <implementation class="Service.impl.StudentClassImpl"/>
+  <service>
+    <provide interface="Service.StudentClassService"/>
+  </service>
+  <property name="passingMarks" type="Integer" value="75"/>
+  <property name="maxStudentCount" type="Integer" value="20"/>
+</scr:component>

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1553374667431
+Bundle-ManifestVersion: 2
+Bundle-Name: osgiTest
+Bundle-SymbolicName: osgiTest
+Bundle-Version: 1.0.0.201903232057
+Created-By: 1.8.0_202 (Amazon.com Inc.)
+Import-Package: org.osgi.framework;version="[1.5,2)",org.osgi.service.
+ component;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Private-Package: Service,Service.impl,com.ttn.sling.project.core
+Provide-Capability: osgi.service;objectClass:List<String>="Service.Cla
+ ssConfgurationService",osgi.service;objectClass:List<String>="Service
+ .StudentClassService",osgi.service;objectClass:List<String>="java.lan
+ g.Runnable"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/Service.impl.ClassConfigImpl.xml,OSGI-INF/
+ Service.impl.StudentClassImpl.xml,OSGI-INF/com.ttn.sling.project.core
+ .SimpleDSComponent.xml
+Tool: Bnd-3.5.0.201709291849

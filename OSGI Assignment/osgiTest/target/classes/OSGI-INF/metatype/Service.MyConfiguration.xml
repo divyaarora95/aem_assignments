@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/Service.MyConfiguration">
+  <OCD id="Service.MyConfiguration" name="Student Configuration" description="Configuration for student class">
+    <AD id="maxStudentCount" type="Integer" name="Maximum Students" description="Number of students allowed" default="20"/>
+    <AD id="passingMarks" type="Integer" name="Passing Marks" description="Marks required to pass" default="75"/>
+  </OCD>
+  <Designate pid="Service.impl.ClassConfigImpl">
+    <Object ocdref="Service.MyConfiguration"/>
+  </Designate>
+</metatype:MetaData>

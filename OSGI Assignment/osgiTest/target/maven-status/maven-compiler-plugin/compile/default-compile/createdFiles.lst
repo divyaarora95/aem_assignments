@@ -1,0 +1,8 @@
+Service/StudConfiguration.class
+Service/ClassConfgurationService.class
+Service/impl/StudentClassImpl.class
+Service/MyConfiguration.class
+com/ttn/sling/project/core/SimpleDSComponent.class
+Service/impl/ClassConfigImpl.class
+Service/Student.class
+Service/StudentClassService.class
