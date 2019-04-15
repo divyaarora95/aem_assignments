@@ -1,0 +1,45 @@
+.form-component{
+    background-color: #00B454;
+    padding: 20px;
+    font: Sans-serif;
+    margin-top: 0;
+
+}
+
+h2{
+	margin-left: 43%;
+}
+
+.form{
+      margin-left: 25%;
+}
+
+.input1{
+    padding: 10px;
+    width: 32%;
+    border-radius: 7px;	
+    display: inline !important;
+}
+
+.input2{
+    padding: 10px;
+    margin-left: 5%;
+    width: 32%;
+    border-radius: 7px;
+    display: inline !important;
+}
+
+
+textarea{
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.button-form{
+   background-color: #FF4500;
+   padding: 20px;
+   width: 20%;
+   color: white;
+   border-radius: 12px;
+   margin-left: 23%;
+}

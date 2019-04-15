@@ -1,0 +1,14 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='header'}"data-sly-unwrap/>
+<div class="head-row">
+	<span><a href="#"><img class="header-logo" src = "${properties.fileReference}"></img></a></span>
+	<span data-sly-use.menuItems="com.ttn.core.Header">
+	<sly data-sly-list.parent="${menuItems.multifieldItems}">
+	<ul>
+    	<li><a href="${parent.navLink @ context='uri'}.html"> ${parent.navTitle}</a></li>
+    </ul>
+    </sly>
+	</span>
+<span class="head-button"><a href= "#">${properties.title}</a></span>
+</div>
+<hr style="width: 100%">
