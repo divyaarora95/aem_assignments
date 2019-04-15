@@ -3,7 +3,7 @@
 <div class="head-row">
 	<span><a href="#"><img class="header-logo" src = "${properties.fileReference}"></img></a></span>
 	<span data-sly-use.menuItems="com.ttn.core.Header">
-	<sly data-sly-list.parent="${menuItems.multifieldItems}">
+	<sly data-sly-list.parent="${menuItems.beanItems}">
 	<ul>
     	<li><a href="${parent.navLink @ context='uri'}.html"> ${parent.navTitle}</a></li>
     </ul>
