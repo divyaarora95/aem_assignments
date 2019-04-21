@@ -1,0 +1,18 @@
+.div1{
+    background:#000;
+    text-align:center; 
+     height:12%;    
+	    }
+
+.span1{
+    color:#fff;
+
+    }
+
+.div2{
+        display:inline-block;
+            }
+.img1 {
+    width:"28px" ;
+        height:"28px";
+    }

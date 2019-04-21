@@ -1,0 +1,10 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='tsibanner'}"/>
+
+<div class="home-banner">
+
+    <img src="${properties.fileReference}"/>
+    <a class="banner-btn" href="${obj.Link}" target="_blank">
+        ${properties.text}
+    </a>
+</div>

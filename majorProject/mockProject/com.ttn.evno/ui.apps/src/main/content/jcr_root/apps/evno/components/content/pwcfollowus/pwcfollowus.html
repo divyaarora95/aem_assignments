@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+data-sly-call="${clientlib.css @ categories='followusclientlib'}"/>
+
+
+<sly data-sly-use.foll="${'com.ttn.core.FollowUsUsePojo'}"/>
+<div class="div1">
+
+<span class="span1" >Follow us</span>&nbsp
+ <div class="div2" style="padding: 12px" data-sly-list.child1="${foll.getFollowComponent}">
+<a href="${child1.followuspath}">
+<img style="background-color: white; padding: 7px "class="img1"src="${child1.logoimage}" >&nbsp
+</a>
+</div>
+
+</div>

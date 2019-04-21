@@ -1,0 +1,47 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='teaser1'}"/>
+<div class="columns  large-8 medium-12 small-12  small-p-b-16x small-p-lr-8x">
+			<div class="    medium-row-m-t-76  ">
+    <div class="teaser">
+	<div class="row">
+
+	    <div data-equalizer="foo" data-resize="foo" data-mutate="foo" data-e="df79gu-e" data-events="mutate">
+
+		        <div class="columns medium-6 pr-0-640" data-equalizer-watch="foo" style="height: 415px;">
+<sly data-sly-test.image="${properties.fileReference}">
+
+<div class="image-placeholder">
+
+                        <figure>
+                        	 <picture>
+
+                                 <img width="100%" src=${properties.fileReference} alt="Vitamin K Guide">
+                            </picture>
+						</figure>
+
+		            </div>
+</sly>
+</div>
+   <div class="columns medium-6 pl-0-640">
+                <div class="category-bg category-padd category-cell " data-equalizer-watch="foo" style="height: 415px;">
+	                <h3 class="title-category">	${properties.title}</h3>
+	                <h4>	${properties.subtitle}</h4>
+	                <p>${properties.description}</p>
+
+		                <a class="cta-action" href="https://www.ptinr.com/en/home/how-it-works.html" target="_self">
+		                	${properties.title}
+                             <sly data-sly-test.check="${properties.title}">
+                            <span class="arrow-read"></span>
+                            </sly>
+		                </a>
+           	<span class="side-arrow"></span>
+
+	                   </div>
+	        </div>
+	    </div>
+
+
+
+	</div>
+</div>
+            </div>
+		</div>

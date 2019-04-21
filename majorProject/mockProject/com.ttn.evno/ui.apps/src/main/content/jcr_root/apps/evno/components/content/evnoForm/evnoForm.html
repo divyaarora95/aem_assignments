@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='form'}"data-sly-unwrap/>
+
+<div class= "form-component" style="background-color:${properties.color@ context='styleToken'};">
+	<h2>${properties.title}</h2>
+    <form class= "form" method="POST" action="/content/customer/" enctype="multipart/form-data">
+       <input type = "hidden" name = ":nameHint" value="customer"/>
+       <input class="input1" type="text" name="customerName" placeholder = "${properties.placeholderOne}" required>
+       <input class="input2" type="tel" name="cusomerMobile" placeholder= "${properties.placeholderTwo}" required>
+       <br><br>
+       <textarea rows="4" cols="76" name="message" placeholder= "${properties.placeholderThree}" required></textarea>
+       <br><br>
+        <input class="button-form" type="submit" value= "${properties.actionTitle}">
+    </form>
+</div>

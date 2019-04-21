@@ -1,0 +1,10 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.css @ categories='evnoRightMiddle'}"data-sly-unwrap/>
+<div class="mid" style="background-color:${properties.color@ context='styleToken'};">
+    <img class="middleImage" src = "${properties.fileReference}"/><br>
+    <div class= "rightBlock">
+        <h1>${properties.title}</h1>
+        <p>${properties.description}</p><br><br><br>
+        <a id="middleRightButton" href="${properties.buttonAction}">${properties.buttonTitle}</a>
+    </div>
+</div>

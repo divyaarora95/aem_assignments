@@ -1,0 +1,40 @@
+.head-row{
+	height: 5%;
+    padding: 10px;
+    margin-left: 4%;
+	display: fixed;
+    margin-bottom: 0px !important;
+}
+
+.head-button{
+        background-color: #00B545;
+        padding: 14px;
+        border-radius: 5px;
+        float: right;
+    	margin-right: 4%;
+        width: 17%;
+        text-align: center;
+}
+
+
+.head-button a{
+	color: #fff;
+    text-decoration: none;
+}
+
+ul{
+	display: inline !important;
+}
+
+ul li{
+	display: inline;
+}
+
+ul li a{
+	display: inline;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: -27px;
+    text-transform: capitalize;
+}

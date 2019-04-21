@@ -1,0 +1,19 @@
+<div class="one">
+    <h1>${properties.sectionTitle}</h1><hr>
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+    <sly data-sly-call="${clientlib.all @ categories='productReview'}"data-sly-unwrap/>
+    
+    <sly data-sly-use.object="com.ttn.core.ProductComponent" />
+    <div data-sly-list.obj="${object.FieldItems}" data-sly-unwrap>
+    
+    <div class= "product">
+        <img class= "product-image" src = "${obj.productImage}"></img>
+        <img class= "reviewer-image" src = "${obj.reviewerImage}"></img>
+        <p class="reviewer-name">${obj.reviewerName}</p>
+        <p class= "testimonial-heading">${obj.testimonialHeading}</p>
+        <p class= "testimonial-description"> ${obj.testimonialDescription}</p>
+        <img class= "product-logo" src = "${obj.productLogo}"></img>
+    </div>
+    
+    </div>
+</div>

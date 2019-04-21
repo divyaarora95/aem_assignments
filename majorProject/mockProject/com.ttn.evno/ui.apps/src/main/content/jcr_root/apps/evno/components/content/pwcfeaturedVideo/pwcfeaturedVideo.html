@@ -1,0 +1,13 @@
+	<h3 class="h3t">Featured Videos</h3>
+<sly data-sly-use.clientlib1="/libs/granite/sightly/templates/clientlib.html" 
+data-sly-call="${clientlib1.css @ categories='pwcfvclientlib'}"/>
+
+
+<div class ="fv1"> 
+
+    <a href="${properties.mylink}"   x-cq-linkchecker="skip">
+      <img  class="videoimage" src = "${properties.fileReference}"/>
+      <a href="${properties.mylink}" class="videolink2"  x-cq-linkchecker="skip">${properties.videolink}</a>
+      <p class="videodescription"> ${properties.videodescription}</p>
+    </a>
+</div>

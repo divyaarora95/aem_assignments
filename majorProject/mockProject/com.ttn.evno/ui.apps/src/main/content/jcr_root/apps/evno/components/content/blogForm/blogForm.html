@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='blogform'}"data-sly-unwrap/>
+
+<div class= "blog-form-component" style="background-color:${properties.color@ context='styleToken'};">
+	<h2>${properties.title}</h2>
+    <form class= "blogforms" method="POST" action="/content/blog/" enctype="multipart/form-data">
+       <input type = "hidden" name = ":nameHint" value="blog"/>
+       <input class="bloginput1" type="text" name="blogTitle" placeholder = "${properties.placeholderOne}" required>
+       <input class="bloginput2" type="tel" name="blogSubitle" placeholder= "${properties.placeholderTwo}" required>
+       <br><br>
+       <textarea class="blogtextarea" rows="4" cols="77" name="blogData" placeholder= "${properties.placeholderThree}" required></textarea>
+       <br><br>
+        <input class="blog-button-form" type="submit" value= "${properties.actionTitle}">
+    </form>
+</div>

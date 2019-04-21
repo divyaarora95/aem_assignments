@@ -1,0 +1,32 @@
+.middleImage{
+    width: 45%;
+    display:inline;
+    float: left;
+    padding: 5px;
+}
+
+.rightBlock{
+    width:45%;
+    display:inline;
+    float: right;
+    padding: 5px;
+}
+
+.rightBlock p{
+    margin-right: 30px;
+}
+
+.mid{
+    display: inline-block !important;
+    padding: 15px;
+}
+
+#middleRightButton{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+}

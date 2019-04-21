@@ -1,0 +1,23 @@
+.midImage{
+    width: 45%;
+    display:inline;
+    float: right;
+}
+
+.leftBlock{
+    width:45%;
+    display:inline;
+    float: left;
+}
+
+.leftBlock p{
+    margin-left: 30px;
+}
+
+.leftBlock h1{
+    margin-left: 30px;
+}
+
+.midd{
+    display: inline-block !important;
+}

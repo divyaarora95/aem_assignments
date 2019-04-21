@@ -1,0 +1,19 @@
+.home-banner{
+    position: relative;
+}
+
+.home-banner > img{
+    height:350px;
+    width: 100%;
+}
+
+.banner-btn{
+    position: absolute;
+    background-color: green;
+    bottom: 30px;
+    left: 150px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
