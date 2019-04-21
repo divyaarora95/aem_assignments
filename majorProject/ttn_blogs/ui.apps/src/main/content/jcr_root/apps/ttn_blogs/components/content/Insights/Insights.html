@@ -1,0 +1,18 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='insight'}"data-sly-unwrap/>
+
+<div class="section">
+    <h2>${properties.sectionTitle}</h2>
+    <h4>${properties.sectionSubheading}</h4>
+</div>
+<div data-sly-use.insight="com.ttn.blogs.core.models.InsightModel">
+    <div data-sly-list.mymultilist = ${insight.list}>
+        <a href="${mymultilist.pageLink}">
+            <div class="box">
+                <img src = ${mymultilist.imageLink} height="100px" width="100px"/>
+                <h4>${mymultilist.title}</h4>
+                <p>${mymultilist.subtitles}</p>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.box p{
+    text-decoration: none !important;
+    color: black;
+    text-align: center;
+}
+
+.box h4{
+    text-decoration: none !important;
+    color: black;
+    text-align: center;
+}
+
+.section h2{
+    margin-left: 41%;
+}
+
+.section h4{
+    margin-left: 32%;
+}
+
+.section{
+    padding: 20px;
+}
+
+.box{
+    width:22%;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 15px;
+    display: inline-block;
+
+}
+
+.box img{
+    width: 100%;
+}
+
+.box p{
+    width: 100%;
+}
+
+.box h4{
+    width: 100%;
+}

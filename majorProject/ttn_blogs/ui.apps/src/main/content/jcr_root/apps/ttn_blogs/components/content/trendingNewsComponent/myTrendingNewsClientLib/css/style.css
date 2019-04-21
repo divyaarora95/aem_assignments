@@ -1,0 +1,14 @@
+#outerLink{
+        text:grey;
+        text-decoration:none;
+    }
+#outerDiv{
+    display:inline-block;
+    height:450px;
+    width:300px; 
+    border-style: groove;
+}
+.innerImage{
+        height:250px; 
+		width:300px;
+    }
