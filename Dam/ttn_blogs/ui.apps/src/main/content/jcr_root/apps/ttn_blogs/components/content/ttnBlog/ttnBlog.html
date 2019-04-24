@@ -1,0 +1,7 @@
+<h3>Blog Component</h3>
+<p> Blog Title: ${properties.title} </p>
+<p> Content: ${properties.content} </p>
+<p> Date of Publication: ${properties.publishDate} </p>
+<div data-sly-use.useDemo ="${'com.ttn.blogs.core.Demo' @parameter= 'test'}">
+	${useDemo.getSample}
+</div>

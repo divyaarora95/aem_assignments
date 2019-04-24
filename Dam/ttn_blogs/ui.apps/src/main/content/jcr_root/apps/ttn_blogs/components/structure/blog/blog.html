@@ -1,0 +1,29 @@
+<head>
+    <style>
+		.content-left{
+        	width:68%;
+            display: inline-block;
+        }
+
+		.content-right{
+        	width:31%;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<sly data-sly-include = "/libs/wcm/core/components/init/init.jsp"/>
+<header>
+    <div data-sly-include = "/apps/ttn_blogs/components/structure/structureContent/header.html"></div>
+    </div>
+</header>
+<body>
+	<h3> content begins </h3>
+    <div class = "blog-search-list" data-sly-resource= "${'blog-search-list' @resourceType= 'wcm/foundation/components/parsys'}"></div>
+	<div class = "content-left" data-sly-resource= "${'body-parsys1' @resourceType = 'wcm/foundation/components/parsys'}"></div>
+    <div class = "content-right" data-sly-resource= "${'body-parsys2' @resourceType = 'wcm/foundation/components/parsys'}"></div>
+    <h3> content ends </h3>
+</body>
+<footer>
+	<div data-sly-include = "/apps/ttn_blogs/components/structure/structureContent/footer.html"></div>
+</footer>

@@ -1,0 +1,8 @@
+component One
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+data-sly-call="${clientlib.css @ categories='componentOne'}"/>
+
+<div class= ${properties.dropdown}>
+	component text: ${properties.content}
+</div>

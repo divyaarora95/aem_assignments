@@ -1,0 +1,10 @@
+hello test
+${properties.title}
+${properties.link}
+${currentStyle.title}
+<!--/*${currentStyle.link}-->
+<!--<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='clOne'}"/>-->
+<!--<div data-sly-element"${'h2'}">hello</div>*/-->
+
+<sly data-sly-use.ob3="com.ttn.blogs.core.UrlConfigUsePOJO" />
+<script src="${ob3.getUrl}"></script>

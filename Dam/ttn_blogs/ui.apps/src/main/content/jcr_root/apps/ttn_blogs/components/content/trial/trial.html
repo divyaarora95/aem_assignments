@@ -1,0 +1,10 @@
+<div data-sly-element"${'h1'}">hello</div>
+<p data-sly-element="${'h1'}">Blah</p>
+<p data-sly-text = "${properties.jcr:title}">new title</p>
+<p data-sly-text="${'<strong>Bold and Proud</strong>' @ context='html'}"></p>
+<p data-sly-test="${wcmmode.edit}">You are in edit mode</p>
+<p data-sly-test="${wcmmode.edit}">You are now in edit mode </p>
+<p data-sly-test>This paragraph will never display</p>
+<ul data-sly-list="${currentPage.listChildren}">
+	<li>${item.title}
+</ul>

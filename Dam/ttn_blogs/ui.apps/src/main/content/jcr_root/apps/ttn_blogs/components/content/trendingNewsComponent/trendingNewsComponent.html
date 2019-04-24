@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='myTrendingNewsClientLib'}"/>
+
+
+<a href="${head.pageLink @ context='uri'}.html" id="outerLink"> 
+<div id="outerDiv">
+<img class="innerImage" src="${properties.imgLink @ context='uri'}">
+<center><p>${properties.knowMoreText}<p></center>
+<h3>${properties.title} </h3>
+<h4>${properties.description}</h4>
+</div>
+</a>
+
+</body>
+</html>
